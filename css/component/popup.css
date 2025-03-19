@@ -1,0 +1,111 @@
+.common_popup {
+  position: absolute;
+  padding: 0;
+  text-align: center;
+  -ms-overflow-style: none;
+  border: 1px solid #d1d1d1;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.common_popup .onday_close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+}
+.common_popup .onday_close > div, .common_popup .onday_close button {
+  padding: 15px 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.common_popup .onday_close > button {
+  border-left: 1px solid #d1d1d1;
+}
+.common_popup .onday_close .close_pop {
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+.common_popup .onday_close input[type=checkbox],
+.common_popup .onday_close input[type=radio] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.common_popup .onday_close input[type=checkbox] + label,
+.common_popup .onday_close input[type=radio] + label {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  opacity: 1;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+.common_popup .onday_close input[type=text],
+.common_popup .onday_close input[type=url],
+.common_popup .onday_close input[type=email],
+.common_popup .onday_close input[type=password] {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  resize: none;
+  border: 1px solid #E6E6E6;
+  background-color: #fff;
+  font-size: 1.0625rem;
+  padding: 10px 15px;
+}
+
+.common_popup .onday_close input::-webkit-input-placeholder {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: #aaa;
+}
+
+.common_popup .onday_close input:-ms-input-placeholder {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: #aaa;
+}
+
+.common_popup .onday_close input::-ms-input-placeholder {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: #aaa;
+}
+
+.common_popup .onday_close input::-moz-placeholder {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: #aaa;
+}
+
+.common_popup .onday_close input::placeholder {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: #aaa;
+}
+
+.common_popup .onday_close input[type=checkbox] + label::before,
+.common_popup .onday_close input[type=radio] + label::before {
+  width: 15px;
+  height: 15px;
+}
+
+.common_popup .onday_close input[type=checkbox]:checked + label::before,
+.common_popup .onday_close input[type=radio]:checked + label::before {
+  width: 15px;
+  height: 15px;
+  line-height: 14px;
+}/*# sourceMappingURL=popup.css.map */

@@ -1,0 +1,93 @@
+/********** nomalize **********/
+html, body, h1, h2, h3, h4, h5, h6, 
+p, div, input, nav, textarea, select, header, section, article, aside, footer, form, button, 
+table, thead, tbody, tr, td, th,
+ul, li, ol, dl, dt, dd {margin: 0; padding: 0; box-sizing: border-box;}
+
+ul, ol {list-style: none;}
+
+a {text-decoration: none; color: inherit; display: block;}
+a, input, button {outline: 0;}
+
+img {vertical-align: middle; max-width: 100%;}
+figure {margin: 0;}
+
+:focus {outline: none;}
+/* ::selection {background-color: rosybrown; color: #fff;} */
+.video_wrap {width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden; position: relative; margin-bottom: -1px;}
+.video_wrap iframe {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%;}
+.video_wrap video {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%;}
+
+table {border-collapse: collapse; border: 0; border-spacing: 0; width: 100%;}
+
+select {
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff url(/img/select_arrow.png) no-repeat center right 15px;
+  background-size: 16px;
+}
+select::-ms-expand {display:none}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input {font-family: inherit; font-size: inherit; border: 0; outline: 0; color: inherit;}
+select {font-family: inherit; font-size: inherit; border: 0; outline: 0; color: inherit;}
+button {font-family: inherit; background: none; border: 0; color: inherit; cursor: pointer;}
+input:not([type="checkbox"], [type="radio"]), select, textarea { color: inherit; height: 45px; border: var(--grey-border); padding: 0 12px; font-size: var(--font18); border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border: 1px solid #D9D9D9;}
+textarea {width: 100%; font-family: inherit; font-size: inherit; resize: none; outline: 0; color: inherit; line-height: 1.5;}
+textarea::-webkit-scrollbar{width: 7px;}
+textarea::-webkit-scrollbar-track {background-color:#f1f1f1;}
+textarea::-webkit-scrollbar-thumb {background-color:#ddd;}
+textarea::-webkit-scrollbar-thumb:hover {background: #ccc;}
+textarea::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {width:3px;height:0px;background:transparent;} 
+*::placeholder {font-family: inherit; font-size: inherit; color: #adadad;}
+fieldset {border: 0; margin: 0; padding: 0;}
+
+[popover] {border: none; padding: 0; margin: 0; left: auto;}
+
+.ellipsis {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;  
+}
+.ellipsis.row_2 {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 텍스트를 자를 때 원하는 단위 ex) 3줄 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.ellipsis.row_3 {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* 텍스트를 자를 때 원하는 단위 ex) 3줄 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.img_hover {overflow: hidden;}
+.img_hover:hover img {transform: scale(1.03); transition: all 0.5s;}
+.overflow_hidden {overflow: hidden;}
+
+@media screen and (max-width: 768px) {
+  input:not([type="checkbox"], [type="radio"]), select, textarea {
+    height: 36px;
+    font-size: var(--font17);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  input:not([type="checkbox"], [type="radio"]), select, textarea {
+    height: 31px;
+    font-size: var(--font16);
+  }
+}
