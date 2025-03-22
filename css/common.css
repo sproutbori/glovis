@@ -511,7 +511,7 @@ header>div {
 /******************** sec4:S  */
 
 .sec4 {
-    margin-top: 380px;
+    margin-top: 180px;
 }
 
 .sec4__title {
@@ -542,12 +542,21 @@ header>div {
     align-items: center;
 }
 
-.sec4__cont_wrap figure {
+.sec4__cont_wrap .sec4__deco1 {
     position: absolute;
     right: 0;
     top: 0;
     max-width: 840px;
 }
+
+.sec4__cont_wrap .sec4__deco2 {
+    position: absolute;
+    left: 160px;
+    top: 0;
+    max-width: 200px;
+    transform: translateY(-195px);
+}
+
 
 /******************** sec4:E  */
 
@@ -779,8 +788,15 @@ header>div {
         padding-left: 40px;
     }
 
-    .sec4__cont_wrap figure {
+    .sec4__cont_wrap .sec4__deco1 {
         max-width: 680px;
+        transform: translateY(95px);
+    }
+
+    .sec4__cont_wrap .sec4__deco2 {
+        left: 80px;
+        max-width: 160px;
+        transform: translateY(-155px);
     }
 
     .sec4__title .contents_title h2 {
@@ -892,11 +908,19 @@ header>div {
         padding-top: 80px;
     }
 
-    .sec4__cont_wrap figure {
+    .sec4__cont_wrap .sec4__deco1 {
         right: auto;
         top: auto;
         left: 50%;
-        transform: translate(-50%, 50%);
+        transform: translate(-50%, 43%);
+        max-width: 540px;
+        width: 100%;
+    }
+
+    .sec4__cont_wrap .sec4__deco2 {
+        left: 50%;
+        max-width: 160px;
+        transform: translate(-45%, -155px);
     }
 
     .sec5 {
@@ -1141,11 +1165,15 @@ header>div {
         padding-top: 40px;
     }
 
-    .sec4__cont_wrap figure {
-        right: auto;
-        top: auto;
+    .sec4__cont_wrap .sec4__deco1 {
+        transform: translate(-50%, 44%);
+        max-width: 380px;
+    }
+
+    .sec4__cont_wrap .sec4__deco2 {
         left: 50%;
-        transform: translate(-50%, 50%);
+        max-width: 100px;
+        transform: translate(-45%, -100px);
     }
 
     .sec4__title {
@@ -1425,14 +1453,19 @@ header>div {
         height: 365px;
     }
 
-    .sec4__cont_wrap figure {
+    .sec4__cont_wrap .sec4__deco1 {
         right: auto;
         top: auto;
         left: 50%;
         transform: translate(-50%, 50%);
-        max-width: 100%;
-        width: 100%;
     }
+
+    .sec4__cont_wrap .sec4__deco2 {
+        left: 50%;
+        max-width: 100px;
+        transform: translate(-45%, -100px);
+    }
+
 
     .sec4__title {
         row-gap: 20px;
